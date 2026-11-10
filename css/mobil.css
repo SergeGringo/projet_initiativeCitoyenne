@@ -1,0 +1,634 @@
+@media ((max-width: 1400px ) and (min-width: 1000px )) {
+  .start {
+    padding: 0 2px;
+  }
+  .beta {
+    margin-left: 25px;
+    margin-right: 10px;
+  }
+  .compte {
+    padding: 50px;
+  }
+  .candidats {
+    width: auto;
+    padding: 0;
+    margin: 60px 0;
+  }
+  .simplet {
+    padding: 40px;
+  }
+  .content{
+    padding: 150px 10px;
+  }
+  .profil_tet {
+    overflow: auto;
+  }
+  /* RESPONSIVE DE LA PAGE CANDIDAT */
+
+  .contents {
+    padding: 50px 10px;
+  }
+  .pict_candi {
+    width: 90%;
+    height: 80%;
+  }
+  .mini_pointer {
+    right: 15%;
+  }
+  .minit_pointer {
+    left: 20%;
+  }
+  .minas_pointer {
+    right: 20%;
+    top: 25%;
+  }
+  .age_pointer {
+    left: 10%;
+    /* padding: 5px 10px; */
+  }
+  .age_pointer p {
+    /* font-size: initial; */
+  }
+  .presi_pointer {
+    right: 0;
+    top: 32%;
+    padding: 5px 10px;
+  }
+  .presi_pointer p {
+    width: 300px;
+  }
+  .minis_pointer {
+    left: 15%;
+    top: 40%;
+  }
+  .big_pointer {
+    right: 10%;
+  }
+  .nom_candi {
+    width: 500px;
+  }
+  .cand_present {
+    margin-top: 50px;
+    padding: 50px 10px;
+  }
+  .clark {
+    font-size: 35px;
+  }
+  .cand_present h2 {
+    margin: 0 auto;
+  }
+  .element_class {
+    padding: 35px 15px;
+  }
+  .desco {
+    text-align: center;
+  }
+  .first_eng h5,
+  .second_eng h5,
+  .third_eng h5 {
+    margin: 0 auto;
+  }
+  .ini .points {
+    display: grid;
+    justify-items: stretch;
+    justify-content: space-around;
+  }
+  .energies {
+    margin-right: 0;
+  }
+  .ini ul li a {
+    display: flex;
+    align-items: center;
+  }
+  .point_com ul li {
+    display: flex;
+    align-items: center;
+  }
+
+  /* RESPONSIVE DE LA PAGE RESULTAT */
+
+  .contenus {
+    padding: 150px 50px;
+  }
+  /* .result{
+        flex-direction: column;
+      } */
+  .tours {
+    margin-top: 15px;
+  }
+  .progressor {
+    overflow-x: auto;
+    position: relative;
+    padding: 30px 10px;
+  }
+  .progressor::-webkit-scrollbar {
+    display: none; /* Cache la barre de défilement */
+  }
+  /* .blouse{
+        padding: 20px 10px;
+        display: block;
+      } */
+  .reserv {
+    width: 45%;
+  }
+  /* .reserv:first-child{
+        margin-bottom: 20px;
+      } */
+  .percent {
+    width: 250px;
+  }
+}
+@media (max-width: 992px) {
+  /* responsive page d'acceuil */
+
+  .listor {
+    align-items: start;
+  }
+  .start {
+    padding: 10px 0;
+  }
+  .beta {
+    margin: 10px 0;
+  }
+  .bare {
+    border: none;
+  }
+  .candidats {
+    width: auto;
+    padding: 0;
+    margin: 50px 0;
+  }
+  .compte {
+    padding: 50px;
+  }
+  .simplet {
+    padding: 50px 0;
+  }
+
+  /* RESPONSIVE DE LA PAGE COMPARER */
+
+  .theme {
+    margin-bottom: 50px;
+  }
+  .content {
+    padding: 150px 50px;
+  }
+  .c1 {
+    justify-content: flex-start;
+    padding: 10px 20px;
+  }
+  /* RESPONSIVE DE LA PAGE CANDIDAT */
+
+  .contents {
+    padding: 50px 10px;
+  }
+  .pict_candi {
+    width: 90%;
+    height: 80%;
+  }
+  .mini_pointer {
+    right: 15%;
+  }
+  .minit_pointer {
+    left: 20%;
+  }
+  .minas_pointer {
+    right: 20%;
+    top: 25%;
+  }
+  .age_pointer {
+    left: 10%;
+    /* padding: 5px 10px; */
+  }
+  .age_pointer p {
+    /* font-size: initial; */
+  }
+  .presi_pointer {
+    right: 0;
+    top: 32%;
+    padding: 5px 10px;
+  }
+  .presi_pointer p {
+    width: 250px;
+  }
+  .minis_pointer {
+    left: 15%;
+    top: 40%;
+  }
+  .big_pointer {
+    right: 10%;
+  }
+  .nom_candi {
+    width: 500px;
+  }
+  .cand_present {
+    margin-top: 50px;
+    padding: 50px 10px;
+  }
+
+  .cand_present h2 {
+    margin: 0 auto;
+  }
+  .element_class {
+    padding: 35px 15px;
+  }
+  .desco {
+    text-align: center;
+  }
+  .first_eng h5,
+  .second_eng h5,
+  .third_eng h5 {
+    margin: 0 auto;
+  }
+  .ini .points {
+    display: grid;
+    justify-items: stretch;
+    justify-content: space-around;
+  }
+  .energies {
+    margin-right: 0;
+  }
+  .point_com ul li {
+    display: flex;
+    align-items: center;
+  }
+
+  /* RESPONSIVE DE LA PAGE RESULTAT */
+
+  .contenus {
+    padding: 150px 0px;
+  }
+  /* .result{
+      flex-direction: column;
+    } */
+  .tours {
+    margin-top: 15px;
+  }
+  .progressor {
+    overflow-x: auto;
+    position: relative;
+    padding: 30px 10px;
+  }
+  .progressor::-webkit-scrollbar {
+    display: none; /* Cache la barre de défilement */
+  }
+  .blouse {
+    padding: 20px 10px;
+    display: block;
+  }
+  .reserv {
+    width: auto;
+  }
+  .reserv:first-child {
+    margin-bottom: 20px;
+  }
+  .percent {
+    width: 250px;
+  }
+  /*responsive de la page*/
+  .cand_ga h5 {
+    font-size: initial;
+  }
+}
+@media (max-width: 768px) {
+  /* responsive page d'acceuil */
+
+  .listor {
+    align-items: start;
+  }
+  .start {
+    padding: 10px 0;
+  }
+  .beta {
+    margin: 10px 0;
+  }
+  .bare {
+    border: none;
+  }
+  .compte {
+    padding: 50px;
+  }
+  .candidats {
+    width: 80%;
+  }
+  .simplet {
+    padding: 50px 0;
+  }
+  .abonnez h1 {
+    font-size: 40px;
+  }
+  .blue .copy {
+    flex-direction: column-reverse;
+  }
+
+  /* RESPOONSIVE DE LA PAGE COMPARAISON */
+
+  .theme {
+    margin-bottom: 50px;
+  }
+  .content {
+    padding: 150px 50px;
+  }
+  .c1 {
+    justify-content: flex-start;
+    padding: 10px 20px;
+  }
+
+  /* RESPONSIVE DE LA PAGE CANDIDAT */
+
+  .contents {
+    padding: 50px 10px;
+  }
+  .pict_candi {
+    width: 90%;
+    height: 80%;
+  }
+  .mini_pointer {
+    right: 15%;
+  }
+  .minit_pointer {
+    left: 20%;
+  }
+  .minas_pointer {
+    right: 20%;
+    top: 25%;
+  }
+  .age_pointer {
+    left: 10%;
+    /* padding: 5px 10px; */
+  }
+  .age_pointer p {
+    /* font-size: initial; */
+  }
+  .presi_pointer {
+    right: 0;
+    top: 32%;
+    padding: 5px 10px;
+  }
+  .presi_pointer p {
+    width: 200px;
+  }
+  .minis_pointer {
+    left: 15%;
+    top: 40%;
+  }
+  .big_pointer {
+    right: 10%;
+  }
+  .nom_candi {
+    width: 500px;
+  }
+  .cand_present {
+    margin-top: 50px;
+    padding: 50px 10px;
+  }
+  .clark {
+    font-size: 35px;
+  }
+  .cand_present h2 {
+    margin: 0 auto;
+  }
+  .element_class {
+    padding: 35px 15px;
+  }
+  .desco {
+    text-align: center;
+  }
+  .first_eng h5,
+  .second_eng h5,
+  .third_eng h5 {
+    margin: 0 auto;
+  }
+
+  /* RESPONSIVE DE LA PAGE RESULTAT */
+
+  .contenus {
+    padding: 150px 0px;
+  }
+  /* .result{
+      flex-direction: column;
+    } */
+  .tours {
+    margin-top: 15px;
+  }
+  .progressor {
+    overflow-x: auto;
+    position: relative;
+    padding: 30px 10px;
+  }
+  .blouse {
+    padding: 20px 10px;
+    display: block;
+  }
+  .reserv {
+    width: auto;
+  }
+  .reserv:first-child {
+    margin-bottom: 20px;
+  }
+  .percent {
+    width: 250px;
+  }
+
+  /*responsive de la page*/
+  .cand_ga h5 {
+    font-size: initial;
+  }
+}
+@media (max-width: 576px) {
+  /* responsive page d'acceuil */
+
+  .listor {
+    align-items: start;
+  }
+  .start {
+    padding: 10px 0;
+  }
+  .beta {
+    margin: 10px 0;
+  }
+  .bare {
+    border: none;
+  }
+  .fond_img {
+    padding: 20px;
+  }
+  .compte {
+    padding: 50px 10px;
+  }
+  .candidats {
+    padding: 0;
+    width: auto;
+  }
+  .electoral {
+    padding: 50px 20px;
+  }
+  .partiA {
+    height: auto;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .simplet {
+    padding: 50px 5px;
+  }
+  .comparons {
+    padding-bottom: 0px;
+  }
+  .abonnez h1 {
+    font-size: 30px;
+  }
+  footer .blue {
+    padding: 30px 10px;
+  }
+  .blue form input {
+    width: auto;
+  }
+  .blue .copy {
+    flex-direction: column-reverse;
+  }
+  /* RESPONSIVE DE LA PAGE COMPARAISON */
+
+  .content {
+    padding: 150px 10px;
+  }
+  .theme {
+    margin-bottom: 50px;
+  }
+  .c1 {
+    justify-content: flex-start;
+    padding: 10px 0;
+  }
+  .profil_tet {
+    padding: 0 20px;
+  }
+  /* RESPONSIVE DE LA PAGE CANDIDAT */
+
+  .contents {
+    padding: 0px;
+  }
+  .pict_candi {
+    width: 100%;
+    height: 50%;
+  }
+  .mini_pointer {
+    right: 15%;
+  }
+  .minit_pointer {
+    left: 10%;
+  }
+  .minas_pointer {
+    right: 20%;
+    top: 25%;
+  }
+  .age_pointer {
+    left: 5%;
+    padding: 5px 10px;
+  }
+  .age_pointer p {
+    font-size: initial;
+  }
+  .presi_pointer {
+    right: 0;
+    top: 32%;
+    padding: 5px 10px;
+  }
+  .presi_pointer p {
+    width: 100px;
+    font-size: initial;
+  }
+  .minis_pointer {
+    left: 15%;
+  }
+  .big_pointer {
+    right: 10%;
+  }
+  .nom_candi {
+    width: auto;
+  }
+  .cand_present {
+    margin-top: 50px;
+    padding: 50px 10px;
+  }
+  .clark {
+    font-size: 35px;
+  }
+  .cand_present h2 {
+    margin: 0 auto;
+  }
+  .element_class {
+    padding: 35px 15px;
+  }
+  .point_com {
+    margin-left: 0;
+  }
+  .thema1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .energies {
+    width: auto;
+  }
+  .tails {
+    height: 450px;
+  }
+  .programme p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* RESPONSIVE DE LA PAGE RESULTAT */
+
+  .contenus {
+    padding: 150px 0px;
+  }
+  .result {
+    flex-direction: column;
+  }
+  .tours {
+    margin-top: 15px;
+  }
+  .progressor {
+    overflow-x: auto;
+    position: relative;
+    padding: 30px 10px;
+  }
+  .blouse {
+    padding: 20px 10px;
+    display: block;
+  }
+  .reserv {
+    width: auto;
+  }
+  .reserv:first-child {
+    margin-bottom: 20px;
+  }
+  .percent {
+    width: 250px;
+  }
+
+  /* responsive de la page deuxième tour */
+
+  .elu {
+    flex-direction: column;
+  }
+  .col_blue {
+    position: relative;
+    height: auto;
+  }
+  .cand {
+    position: absolute;
+    top: 33%;
+    width: 100%;
+    left: 0;
+  }
+  .cand_ga h5 {
+    font-size: initial;
+  }
+  .final {
+    display: block;
+    padding: 50px 10px;
+  }
+  .contenu_img {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,1238 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Urbanist;
+}
+
+/* STYLE DU HEADER */
+
+.entete {
+  background-color: rgb(222, 232, 250);
+  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+.listor {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.beta {
+  padding: 10px 30px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.start {
+  padding: 0 25px;
+  text-transform: capitalize;
+}
+.start a {
+  padding: 0;
+  font-weight: 600;
+  color: black;
+  font-size: 20px;
+}
+.bare {
+  padding-right: 60px;
+  border-right: 2px solid gray;
+}
+.seacher input {
+  outline: none;
+}
+.biger .logo {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+/* STYLE DU FOOTER */
+
+footer .blue {
+  background-color: #154d8d;
+  padding: 100px 50px;
+}
+.abonnez {
+  text-align: center;
+}
+.abonnez h1 {
+  color: #fff;
+  font-size: 50px;
+  /* text-transform: capitalize; */
+  font-weight: 600;
+  padding: 0 0 30px 0;
+}
+.blue form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  padding-bottom: 90px;
+}
+
+.blue form input {
+  padding: 20px 15px;
+  width: 400px; /* Largeur de l'input */
+  outline: none;
+  border-radius: 10px 0 0 10px; /* Arrondir uniquement les coins gauche */
+  border: 1px solid gray;
+}
+
+.blue form button {
+  padding: 10px 20px;
+  background-color: black;
+  border: none;
+  border-radius: 0 10px 10px 0; /* Arrondir uniquement les coins droit */
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: -5px; /* Pour éviter un espace entre l'input et le bouton */
+}
+
+/* Pour que le bouton ait une hauteur égale à celle de l'input */
+
+.blue form input,
+.blue form button {
+  height: 55px; /* Ajuste la hauteur selon tes besoins */
+}
+.blue .copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid white;
+  padding: 50px 0;
+}
+.copy p {
+  color: white;
+}
+.copy p i {
+  padding-right: 5px;
+}
+.copy ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.copy ul li {
+  padding: 0 30px;
+}
+.copy ul li a {
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+/* style page d'acceuil */
+.compte {
+  flex: 1;
+  padding: 50px 90px;
+  background-color: #f7fbfb;
+}
+.fond_img {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.596),
+      rgba(255, 255, 255, 0.5)
+    ),
+    /* Dégradé vert à transparent */ /* Dégradé rouge à bleu */
+      url(../Images/freepik-export-20241008142654ZHSW.jpeg); /* Image de fond */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 900px;
+  position: relative;
+  padding: 100px;
+}
+.explore {
+  position: absolute;
+  top: 30%;
+}
+.explore .p1 {
+  background-color: black;
+  padding: 10px 20px;
+  width: fit-content;
+}
+.p1 p {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+.explore .top {
+  margin-top: 30px;
+}
+.explore .yours {
+  padding-top: 30px;
+  color: white;
+  font-weight: 600px;
+  font-size: 20px;
+}
+.representant {
+  text-align: center;
+}
+.back_black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.representant .back_black h5 {
+  background-color: black;
+  padding: 10px;
+  border-radius: 50px;
+  color: white;
+  width: fit-content;
+}
+.representant h4 {
+  font-weight: 600;
+}
+
+/* SLIDE  */
+
+.candidats {
+  width: 90%; /* Ajustez la largeur selon vos besoins */
+  margin: auto;
+  overflow: hidden; /* Pour cacher les débordements */
+  padding: 50px;
+}
+
+.contenu_slide {
+  display: flex; /* Pour aligner les cartes horizontalement */
+}
+
+.candidat {
+  position: relative;
+  min-width: 250px;
+  margin: 10px; /*Largeurminimalepourchaquecarte*/
+  border: 1px solid #ccc; /*Espacemententrelescartes*/
+  border-radius: 30px; /*Bordurepourchaquecarte*/
+  overflow: hidden; /*Coinsarrondis*/
+  height: 450px; /*Pourcacherlesdébordementsd'image*/
+
+  /*height: 100%;Pour garder le ratio d'aspect*/
+}
+.candidat:hover {
+  opacity: 0.8; /* Ajoutez un effet de survol si vous le souhaitez */
+}
+
+.candidat img {
+  width: 100%; /* L'image remplit la carte */
+  height: 100%; /*Pour garder le ratio d'aspect*/
+  object-fit: cover;
+}
+.fond_blanc {
+  background-color: #fff;
+  padding: 30px 0;
+  border-radius: 20px;
+}
+.texte-overlay {
+  position: absolute; /* Position absolue par rapport à la carte */
+  bottom: 0; /* Positionner en bas */
+  left: 0; /* Commencer à gauche */
+  right: 0; /* S'étendre à droite */
+  background-color: rgba(0, 0, 0, 0.5); /* Fond noir transparent */
+  color: white; /* Couleur du texte */
+  padding: 10px; /* Espacement à l'intérieur de l'overlay */
+  /* text-align: center; Centrer le texte */
+}
+.texte-overlay p {
+  line-height: 30px;
+  margin-bottom: 0;
+}
+.texte-overlay .fred {
+  font-weight: 600;
+  font-size: 20px;
+}
+.comparons {
+  padding: 80px 0;
+}
+/* .partiA{
+  background-color: #fff;
+}
+.electoral{
+  background-color:rgb(255, 228, 193);
+  padding: 50px;
+}
+.head{
+  display: flex;
+  align-items: center;
+  background-color: red;
+  padding: 10px;
+}
+.head .prez{
+  position: relative;
+  width: 120px;
+  height: 100px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  overflow: hidden; 
+}
+.prez img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.head .namer{
+  padding: 5px 15px;
+}
+.namer p{
+  margin: 0;
+  line-height: 40px;
+  font-weight: bold;
+}
+.namer .fred{
+  font-weight: 900;
+  font-size: 20px;
+}
+.partiA .corps{
+  background-color: #004e8d;
+}
+.partiA .corps1{
+  background-color: #006d49;
+} */
+.electoral {
+  /* background-color:rgb(255, 228, 193); */
+  padding: 50px 0;
+}
+.row {
+  display: flex; /* Utiliser flexbox pour aligner les éléments */
+}
+.parti {
+  justify-content: space-between;
+}
+
+.partiA {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*Alignelesélémentsencolonne*/
+  height: 100%;
+  /*Assureunespacementégalentreleséléments*/
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  border-radius: 20px;
+  padding: 0;
+  width: 49%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 15px 15px 0 0;
+}
+
+.prez {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  overflow: hidden; /* Masquer les débordements de l'image */
+}
+
+.prez img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Pour garder le ratio d'aspect */
+}
+
+.corps {
+  flex-grow: 1; /* Permet à cette section de prendre l'espace restant */
+  padding: 10px; /* Espacement interne */
+  background-color: #0a3770; /* Couleur de fond pour le corps */
+  border-radius: 0 0 15px 15px; /* Coins arrondis en bas */
+  padding: 30px 15px;
+  /* background-color: #0d3b77; */
+}
+.corps1 {
+  flex-grow: 1; /* Permet à cette section de prendre l'espace restant */
+  padding: 10px; /* Espacement interne */
+  background-color: #057751; /* Couleur de fond pour le corps */
+  border-radius: 0 0 15px 15px; /* Coins arrondis en bas */
+  padding: 30px 15px;
+}
+.namer {
+  margin-left: 10px; /* Espacement entre l'image et le texte */
+}
+.namer p {
+  font-weight: bold;
+}
+.namer .fred {
+  font-weight: 900;
+  font-size: 20px;
+}
+.corps p,
+.corps1 p {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.corps p i,
+.corps1 p i {
+  font-size: 15px;
+  padding-right: 10px;
+}
+.simplet {
+  padding: 50px;
+}
+.simplet h1 {
+  font-weight: 600;
+  line-height: 60px;
+  padding-bottom: 15px;
+}
+.simplet p {
+  line-height: 30px;
+  font-weight: 500px;
+  padding-bottom: 30px;
+  color: rgb(100, 100, 100);
+}
+
+/* STYLE DE LA PAGE COMPARER */
+
+.content {
+  flex: 1;
+  padding-top: 150px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 50px;
+  /* padding: 250px 90px; */
+  background-color: #93a4c5;
+}
+/* .hauteur{
+  max-height: 80vh;
+} */
+.hauteur {
+  height: 100%;
+}
+/* .hauteur .nbr_candidat, .hauteur .theme{
+  height: 100%;
+} */
+.theme .headead {
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.headead p {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.padder {
+  height: 91%;
+  /*  */
+}
+.points {
+  background-color: #fff;
+  height: 100%;
+  list-style-type: none;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.points li {
+  padding: 15px;
+  border-bottom: 1px solid rgb(228, 228, 255);
+  font-weight: 700;
+}
+.points li i {
+  margin-right: 20px;
+  color: #93a4c5;
+}
+.points li:hover {
+  background-color: #e8efff;
+  cursor: pointer;
+}
+.nbr_candidat {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  /* test pour le slide en overflow */
+  position: relative;
+  overflow: hidden;
+}
+.c1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.c1 p {
+  margin-bottom: 0;
+}
+.photo {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+}
+.carte_candidat {
+  padding: 50px 0;
+  width: 100%; /* Définissez la largeur souhaitée */
+  height: auto; /* Définissez la hauteur souhaitée */
+  /* margin: 10px; Espace entre les cartes */
+}
+
+/* .items_slide {
+ display: flex;
+ overflow-x: auto;
+
+} */
+
+/* test scroll */
+
+.items_slide {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none; /* Pour Firefox */
+  -ms-overflow-style: none; /* Pour Internet Explorer et Edge */
+}
+
+.items_slide::-webkit-scrollbar {
+  display: none; /* Pour Chrome, Safari et Opera */
+}
+
+.profil_tet {
+  overflow-x: auto;
+  scrollbar-width: none; /* Pour Firefox */
+  -ms-overflow-style: none; /* Pour Internet Explorer et Edge */
+}
+.profil_tet::-webkit-scrollbar {
+  display: none; /* Pour Chrome, Safari et Opera */
+}
+
+/* FIN TEST */
+.tap-active {
+  filter: blur(2px);
+  /* filter: grayscale(100%); */
+  border-radius: 20px;
+}
+
+.B {
+  height: 515px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.B .larg {
+  height: 25%;
+  width: 400px;
+}
+.B .SM {
+  height: 75%;
+  overflow: auto;
+  scrollbar-width: none; /* Pour Firefox */
+  -ms-overflow-style: none; /* Pour Internet Explorer et Edge */
+}
+/* Cacher la barre de défilement pour les navigateurs Webkit (Chrome, Safari) */
+.SM::-webkit-scrollbar {
+  display: none; /* Cache la barre de défilement */
+}
+.c1 p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.c1 .bolier {
+  font-weight: bold;
+}
+
+#bgc {
+  background-color: rgb(102, 65, 124);
+}
+#bgc1 {
+  background-color: rgb(214, 121, 67);
+}
+#bgc2 {
+  background-color: rgb(20, 151, 160);
+}
+#bgc3 {
+  background-color: #009669f8;
+}
+#bgc4 {
+  background-color: rgb(129, 47, 47);
+}
+
+.econo {
+  display: block;
+}
+.soc {
+  display: none;
+}
+.terr {
+  display: none;
+}
+.carte1 {
+  display: block;
+}
+.carte2 {
+  display: block;
+}
+.carte3 {
+  display: block;
+}
+
+/* STYLE DE LA PAGE CANDIDATS */
+
+.contents {
+  padding: 110px 90px;
+}
+.contents .candidater {
+  background: radial-gradient(
+    circle,
+    rgba(187, 228, 253, 0.411),
+    rgba(237, 245, 250, 0.027)
+  ); /* Dégradé radial bleu ciel avec opacité */
+  z-index: 999;
+  height: 768px;
+  margin-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.candi_center {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.pict_candi {
+  width: 50%;
+  height: 80%;
+  text-align: center;
+}
+.pict_candi img {
+  width: 100%;
+  height: 100%;
+}
+.nom_candi {
+  width: 500px;
+  /* margin: 0 auto; */
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: -5px 5px 10px rgba(173, 239, 255, 0.788),
+    /* Ombre à gauche */ 5px 5px 10px rgba(173, 239, 255, 0.788),
+    /* Ombre à droite */ 0 5px 10px rgba(173, 239, 255, 0.788);
+}
+.nom_candi h1 {
+  color: #000000;
+  font-weight: bold;
+}
+.nom_candi .boldere {
+  font-weight: 900;
+}
+.mini_pointer {
+  /* background-color: red; */
+  position: absolute;
+  right: 30%;
+  top: 5%;
+}
+.mini_pointer i {
+  color: rgb(174, 200, 255);
+  font-size: 10px;
+}
+.minit_pointer {
+  position: absolute;
+  left: 35%;
+  top: 18%;
+  color: rgb(174, 200, 255);
+}
+.age_pointer {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  background-color: #fffffff8;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: -5px 5px 10px rgba(173, 239, 255, 0.788),
+    /* Ombre à gauche */ 5px 5px 10px rgba(173, 239, 255, 0.788),
+    /* Ombre à droite */ 0 5px 10px rgba(173, 239, 255, 0.788),
+    /* Ombre en haut */ 0 -5px 10px rgba(173, 239, 255, 0.788);
+}
+.age_pointer p {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+.minis_pointer {
+  position: absolute;
+  left: 23%;
+  top: 35%;
+}
+.minis_pointer i {
+  font-size: 30px;
+  color: rgb(174, 200, 255);
+}
+.minas_pointer {
+  position: absolute;
+  right: 23%;
+  top: 27%;
+}
+.minas_pointer i {
+  font-size: 5px;
+  color: rgb(174, 200, 255);
+}
+.presi_pointer {
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: -5px 5px 10px rgba(173, 239, 255, 0.788),
+    /* Ombre à gauche */ 5px 5px 10px rgba(173, 239, 255, 0.788),
+    /* Ombre à droite */ 0 5px 10px rgba(173, 239, 255, 0.788),
+    /* Ombre à droite */ 0 -5px 10px rgba(173, 239, 255, 0.788);
+}
+.presi_pointer p {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+.big_pointer {
+  position: absolute;
+  right: 17%;
+  top: 55%;
+}
+.big_pointer i {
+  font-size: 30px;
+  color: rgb(174, 200, 255);
+}
+.cand_present {
+  margin-top: 150px;
+  padding: 50px 100px;
+  background-color: rgba(219, 241, 255, 0.253);
+}
+.voice {
+  padding: 30px 50px;
+}
+.speach {
+  align-items: center;
+}
+.smiley {
+  display: flex;
+  justify-content: center;
+}
+.cand_present h2 {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  width: fit-content;
+}
+.voice h1 {
+  font-weight: bold;
+  line-height: 60px;
+}
+.clark {
+  font-weight: 900;
+  font-size: 50px;
+}
+.voice p {
+  font-weight: 600;
+  line-height: 30px;
+  color: rgb(61, 61, 61);
+}
+.tails {
+  /* background-color: red; */
+  width: 400px;
+  height: 500px;
+}
+.tails img {
+  width: 100%;
+  height: 100%;
+}
+.desco {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.desco h1 {
+  font-weight: bold;
+  padding: 30px 7px;
+}
+.first_eng h5 {
+  background-color: rgb(115, 161, 192);
+  padding: 5px;
+  width: fit-content;
+  font-weight: 600;
+}
+.second_eng h5 {
+  background-color: rgb(255, 174, 228);
+  padding: 5px;
+  width: fit-content;
+  font-weight: 600;
+}
+.third_eng h5 {
+  background-color: rgb(158, 250, 199);
+  padding: 5px;
+  width: fit-content;
+  font-weight: 600;
+}
+.first_eng p,
+.second_eng p,
+.third_eng p {
+  padding-top: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.programme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.programme p {
+  font-size: 25px;
+  padding-top: 20px;
+  font-weight: 600;
+}
+.liste_themes {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.ini ul li {
+  border-bottom: none;
+}
+.ini ul li a {
+  border-bottom: none;
+  text-decoration: none;
+  color: black;
+}
+/* .ini .points{
+
+ } */
+.conteneurs_themes {
+  max-height: 550px; /* Hauteur maximale pour le défilement */
+  overflow-y: auto; /* Permet le défilement vertical */
+  scrollbar-color: rgb(174, 200, 255) rgb(222, 232, 250);
+}
+.element_class {
+  /* background-color: rgb(253, 167, 167); */
+  padding: 30px 50px;
+}
+.thema1 {
+  display: flex;
+  margin-bottom: 30px;
+}
+.energies {
+  margin-right: 50px;
+  width: 15%;
+}
+.energies p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.point_com {
+  margin-left: 50px;
+  padding: 10px 20px;
+  background-color: rgba(172, 236, 252, 0.377);
+  border-radius: 10px;
+  width: 85%;
+}
+.point_com ul {
+  list-style-type: none;
+}
+.point_com ul li {
+  padding: 5px 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+.point_com ul li i {
+  margin-right: 10px;
+  font-size: 10px;
+}
+
+/* STYLE DE LA PAGE RESULTAT */
+
+.contenus {
+  padding: 150px 100px;
+}
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.result .elect {
+  background-color: black;
+  border-radius: 10px;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.elect h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.tours {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tours .active {
+  background-color: rgb(2, 2, 114);
+  color: #fff;
+}
+.tours a {
+  text-decoration: none;
+  color: black;
+  padding: 15px 30px;
+  background-color: rgba(216, 244, 255, 0.473);
+  border-radius: 10px;
+  font-weight: 600;
+}
+.progressor {
+  width: 100%;
+  height: 800px;
+  background-color: #c9e1f9d2;
+  margin-top: 30px;
+  /* border-radius: 10px; */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  padding: 30px 50px;
+}
+.grid_vote {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: flex-end;
+  grid-gap: 60px;
+}
+.percent {
+  border-radius: 20px;
+  border: 15px solid white;
+  position: relative;
+}
+.percent {
+  transition: height 1.5s ease; /* Durée de l'animation */
+}
+
+.postish {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.postish img {
+  width: 100%;
+  height: 100%;
+}
+
+.percent .tage {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+
+  background-color: #fff;
+}
+.tage .stair {
+  background-color: rgb(0, 0, 68);
+  border: 2px solid white;
+  position: absolute;
+
+  bottom: -2px;
+  right: 20%;
+  border-radius: 20px;
+  z-index: 99;
+}
+.tage .loser {
+  background-color: #b8d0e0;
+}
+.tage .loser p {
+  color: black;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.nombre_percente {
+  background-color: #fff;
+  padding: 10px;
+  height: 100%;
+}
+.stair p {
+  margin-bottom: 0;
+  padding: 5px 20px;
+  color: #fff;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.namen h5 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.namen .bold {
+  font-weight: 900;
+}
+.namen p {
+  font-weight: 600;
+}
+
+.percent_vote {
+  /* height: 400px; */
+  width: 100%;
+  padding: 10px;
+}
+.niveau {
+  border-radius: 20px;
+  /* height: 100%; */
+  width: 100%;
+  position: absolute;
+  z-index: 555;
+  bottom: 0;
+}
+.niveau {
+  display: none; /* Cacher par défaut */
+}
+.niveau p {
+  color: white;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.niveau p:last-child {
+  margin-bottom: 10px;
+}
+
+.corp_pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+.esp1 {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.pro1 {
+  height: 30px;
+  background-color: #76c7c0;
+  border-radius: 25px;
+  transition: width 0.3s ease;
+}
+/*PROGRESS BAR */
+.blouse {
+  /* background-color: #f4f4f4; */
+  background-color: #c9e1f9d2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 20px 50px;
+}
+.reserv {
+  /* text-align: center; */
+  width: 45%;
+}
+
+.reserv p {
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+.prog {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+  /* margin-top: 10px; */
+}
+.progresst {
+  height: 10px;
+  background: linear-gradient(#01587b, #01063f);
+  text-align: center;
+  line-height: 30px; /* Align text vertically */
+  color: white;
+  transition: width 2.5s;
+  border-radius: 20px;
+}
+
+/* STYLE DE LA PAGE GAGNANT */
+
+.col_blue {
+  width: 100%;
+  height: 500px;
+  background-color: #c9e1f9d2;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+.final {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.items_progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding-top: 80px;
+}
+.progressions {
+  width: 100%;
+}
+.move-bare {
+  height: 30px; /* Hauteur de la barre de progression */
+  background-color: #f0f0f0; /* Couleur de fond de la barre */
+  position: relative;
+  border-radius: 5px; /* Coins arrondis */
+  overflow: hidden;
+}
+.move {
+  height: 100%;
+  width: 0; /* Commence à 0% */
+  background: linear-gradient(
+    to right,
+    #000130,
+    #110958 50%,
+    #3d3e7a 75%
+  ); /* Couleur de la barre de progression */
+  transition: width 2s ease;
+  border-radius: 5px;
+}
+.dividers {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 2px; /* Épaisseur du trait vertical */
+  background-color: #fff; /* Couleur du trait vertical */
+  transform: translateX(-50%);
+}
+.percentages {
+  text-align: center;
+  /* margin-top: 10px; */
+  font-size: 18px;
+  font-weight: 700;
+}
+.finalist_1,
+.finalist_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.contenu_img {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.contenu_img img {
+  width: 100%;
+  height: 100%;
+}
+.finalist_1 .stair {
+  background-color: rgb(0, 0, 97);
+  border: 2px solid white;
+  position: absolute;
+  right: auto;
+  bottom: -5px;
+  border-radius: 20px;
+  z-index: 99;
+}
+.finalist_1 .stair {
+  transform: translateY(20px); /* Déplace les éléments vers le bas */
+  opacity: 0; /* Les éléments sont invisibles au départ */
+  transition: transform 1s ease, opacity 1s ease; /* Animation pour la transformation et l'opacité */
+}
+
+.finalist_1 .stair.show {
+  transform: translateY(0); /* Remet les éléments à leur position d'origine */
+  opacity: 1; /* Rendre les éléments visibles */
+}
+.cand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cand_ga {
+  font-weight: 600;
+  font-size: 25px;
+}
+.cand_ga .bold {
+  font-weight: 900;
+}
+.cand_ga h5 {
+  /* margin-bottom: 0; */
+  font-size: 25px;
+}
+.cand_ga p {
+  font-weight: normal;
+  font-size: initial;
+  margin-bottom: 0;
+  font-weight: 600;
+  /* background: linear-gradient(#fafafa, #040255); */
+}
+.percentages .bck {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background: linear-gradient(#fff, #647ba7);
+}
+.elu {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding-top: 20px;
+  overflow: hidden; /* Pour cacher les éléments en dehors de la div */
+}
+.per_voice {
+  text-align: center;
+  transform: translateY(20px); /* Déplace les éléments vers le bas */
+  opacity: 0; /* Les éléments sont invisibles au départ */
+  transition: transform 1s ease, opacity 1s ease; /* Animation pour la transformation et l'opacité */
+}
+.per_voice.show {
+  transform: translateY(0); /* Remet les éléments à leur position d'origine */
+  opacity: 1; /* Rendre les éléments visibles */
+}
+.elu p {
+  margin-bottom: 0;
+}
+.elu p:last-child {
+  font-size: 13px;
+  font-weight: 600;
+}
+.elu .bolded {
+  font-weight: 800;
+}
