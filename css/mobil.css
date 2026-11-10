@@ -441,6 +441,190 @@
   .listor {
     align-items: start;
   }
+}
+
+@media (max-width: 767px) {
+    .entete {
+      padding: 11px 18px;
+    }
+
+    .biger .logo {
+      font-size: 17px;
+    }
+
+    .logo-mark {
+      width: 33px;
+      height: 33px;
+      border-radius: 10px;
+    }
+
+    .home-hero {
+      min-height: 690px;
+      align-items: flex-start;
+      padding: 142px 24px 100px;
+      background-position: 58% center;
+    }
+
+    .home-hero h1 {
+      font-size: clamp(46px, 12vw, 64px);
+      letter-spacing: -2.7px;
+    }
+
+    .home-hero__text {
+      max-width: 460px;
+      font-size: 15px;
+    }
+
+    .home-hero__actions {
+      align-items: stretch;
+      flex-direction: column;
+      max-width: 330px;
+    }
+
+    .home-button {
+      min-height: 48px;
+    }
+
+    .home-hero__note {
+      margin-top: 29px;
+    }
+
+    .home-scroll {
+      right: 24px;
+      bottom: 25px;
+    }
+
+    .home-scroll span {
+      display: none;
+    }
+
+    .home-intro {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 27px 24px;
+    }
+
+    .home-intro__icon {
+      width: 42px;
+      height: 42px;
+      flex-basis: 42px;
+    }
+
+    .home-candidates {
+      padding: 68px 22px 72px;
+    }
+
+    .home-section-heading {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 17px;
+      margin-bottom: 24px;
+    }
+
+    .home-section-heading h2,
+    .home-compare h2 {
+      font-size: 32px;
+      letter-spacing: -1px;
+    }
+
+    .home-section-copy {
+      max-width: 380px;
+      line-height: 1.65;
+    }
+
+    .home-candidate-list {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .home-candidate-card {
+      height: 370px;
+    }
+
+    .home-compare {
+      grid-template-columns: 1fr;
+      gap: 32px;
+      margin: 0 12px 70px;
+      padding: 48px 20px;
+      border-radius: 17px;
+    }
+
+    .home-compare__copy > p:not(.home-kicker) {
+      font-size: 13px;
+    }
+
+    .home-compare__topics {
+      gap: 12px;
+    }
+
+    .home-compare__visual {
+      padding: 18px;
+    }
+
+    .home-compare__people > div {
+      gap: 6px;
+      font-size: 9px;
+    }
+
+    .home-compare__people img {
+      width: 29px;
+      height: 29px;
+    }
+
+    .home-final-cta {
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 0 23px 70px;
+    }
+
+    .home-final-cta h2 {
+      font-size: 30px;
+      letter-spacing: -1px;
+    }
+
+    footer .blue {
+      padding: 48px 20px 24px;
+    }
+
+    .abonnez h1 {
+      font-size: 29px;
+    }
+
+    .blue form {
+      padding-bottom: 36px;
+    }
+
+    .blue form input {
+      min-width: 0;
+    }
+
+    .blue form button {
+      padding: 10px 13px;
+      font-size: 13px;
+    }
+
+    .blue .copy {
+      align-items: flex-start;
+      flex-direction: column-reverse;
+      gap: 18px;
+      padding-top: 21px;
+    }
+
+    .copy ul {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .copy ul li {
+      padding: 0;
+    }
+
+    .copy p {
+      margin: 0;
+    }
+}
+
+@media (max-width: 576px) {
   .start {
     padding: 10px 0;
   }

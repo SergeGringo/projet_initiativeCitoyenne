@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -27,26 +27,26 @@
 <body>
     <nav class="navbar navbar-expand-lg entete">
         <div class="container-fluid biger">
-            <a class="navbar-brand logo" href="index.php">Initiative Citoyenne</a>
+            <a class="navbar-brand logo" href="index.php"><span class="logo-mark"><i class="fa-solid fa-leaf" aria-hidden="true"></i></span>Initiative <strong>Citoyenne</strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 listor">
+                <ul class="navbar-nav mb-2 mb-lg-0 listor">
                     <li class="nav-item start">
-                        <a class="nav-link active" aria-current="page" href="index.php">accueil</a>
+                        <a class="nav-link active" aria-current="page" href="index.php">Accueil</a>
                     </li>
                     <li class="nav-item start">
-                        <a class="nav-link" href="candidats.php">candidats</a>
+                        <a class="nav-link" href="candidats.php">Candidats</a>
                     </li>
                     <li class="nav-item start bare">
-                        <a class="nav-link" href="resultat.php">résultats</a>
+                        <a class="nav-link" href="resultat.php">Résultats</a>
                     </li>
-                    <a href="comparer.php" class="btn btn-dark active beta" role="button"
-                        aria-pressed="true">Comparer</a>
-
+                    <li class="nav-item">
+                        <a href="comparer.php" class="btn btn-dark active beta" role="button">Comparer les programmes <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </li>
                 </ul>
                 <!-- <form class="d-flex seacher">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
